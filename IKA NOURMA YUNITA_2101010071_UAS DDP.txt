@@ -1,0 +1,53 @@
+NAMA	: IKA NOURMA YUNITA
+NIM	: 2101010071
+PRODI	: SISTEM INFORMASI
+UAS DDP
+Soal:
+1. Buatlah program dengan menggunakan pemgrograman cpp, tema bebas!
+JAWABAN
+1. Program untuk menentukan bilangan yang terbesar, terkecil dan selisih dari 2 buah  bilangan terbesar dan terkecil.
+
+	
+	******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,n;
+	float terkecil,terbesar,bil;
+	cout << "Masukan Total Bilangan yang akan di input : ";
+	cin >> n;
+	cout<<endl;
+	for (i=1;i<=n;i++){
+	     cout << "Masukan Bilangan Ke-" << i << " : ";
+	     cin >> bil;
+	     
+	     if (i==1){
+	     	terkecil=bil;
+	     	terbesar=bil;
+		 }
+		 else if (bil < terkecil){
+		 	terkecil=bil;
+		 }else if (bil > terbesar){
+		 	terbesar=bil;
+		 }else {
+		 	
+		 }
+	}
+	cout << "\nNilai Terbesar = "<<terbesar<<endl;
+	cout << "Nilai Terkecil =  " <<terkecil <<endl;
+	cout << "Selisih = "<<terbesar-terkecil <<endl ;
+
+	return 0;	
+}
+
+
